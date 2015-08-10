@@ -20,5 +20,10 @@ describe(Parcel) do
       expect(test_parcel.cost_to_ship(51, 2)).to(eq(45))
     end
 
+    it('returns a base price if the shipment cost is less than 5') do
+      test_parcel = Parcel.new(2, 1, 2, 2)
+      expect(test_parcel.cost_to_ship(20, 1)).to(eq(5))
+    end
+
   end
 end

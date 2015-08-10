@@ -30,5 +30,10 @@ class Parcel
 
     running_total = running_total * multiplier
 
+    if running_total < base_price
+      running_total = base_price
+    end
+
+    running_total
   end
 end
