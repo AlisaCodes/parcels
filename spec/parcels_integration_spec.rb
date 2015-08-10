@@ -12,7 +12,7 @@ describe('the parcels execution path', {:type => :feature}) do
    fill_in('length', :with => '4')
    fill_in('weight', :with => '5')
 
-  uncheck 'speed'
+  check 'speed'
   #  find(:css, "speed").set(false)
 
    fill_in('distance', :with => '25')
