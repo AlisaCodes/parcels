@@ -1,0 +1,28 @@
+<h1>Calculate Shipping With U$</h1>
+<form action="/parcels">
+  <div class="form-group">
+    <label for="height">Height:</label>
+    <input id="height" name="height" class="form-control" type="text">
+
+    <label for="width">Width:</label>
+    <input id="width" name="width" class="form-control" type="text">
+
+    <label for="length">Length:</label>
+    <input id="length" name="length" class="form-control" type="text">
+
+    <label for="weight">Weight:</label>
+    <input id="weight" name="weight" class="form-control" type="text">
+
+    <div class="checkbox">
+      <label for="speed">
+        <input id="speed" name="speed" type="hidden" value="1">
+        <input id="speed" name="speed" type="checkbox" value="2"> Expedited Shipping (op$ional)
+      </label>
+    </div>
+
+    <label for="distance">Distance (in miles):</label>
+    <input id="distance" name="distance" class="form-control" type="text">
+
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
+</form>
